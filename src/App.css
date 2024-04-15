@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.header {
+  background-color: #222; /* Dark background color */
+  color: #fff; /* Light text color */
+  padding: 20px; /* Padding for spacing */
+  display: flex; /* Flex layout for alignment */
+  justify-content: space-between; /* Align items evenly */
+  align-items: center; /* Center items vertically */
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff; /* White color for logo */
+  text-decoration: none; /* Remove underline */
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+nav ul li {
+  display: inline;
+  margin-right: 20px; /* Increased margin for spacing */
 }
 
-.card {
-  padding: 2em;
+nav ul li a {
+  color: #fff; /* White color for links */
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+nav ul li a:hover {
+  color: #ffcc00; /* Yellow color on hover */
+}
+.footer {
+  background-color: #222; /* Dark background color */
+  color: #fff; /* Light text color */
+  padding: 20px; /* Padding for spacing */
+  text-align: center; /* Center align text */
+  position: fixed; /* Fixed position at the bottom */
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Full width */
+}
+
+.footer-content {
+  display: flex; /* Flex layout for alignment */
+  justify-content: space-between; /* Align items evenly */
+  align-items: center; /* Center items vertically */
+}
+
+.footer-content div {
+  flex: 1; /* Distribute space evenly */
+}
+
+.version {
+  font-size: 14px; /* Decrease font size */
+}
+
+.contact {
+  font-size: 14px; /* Decrease font size */
 }
